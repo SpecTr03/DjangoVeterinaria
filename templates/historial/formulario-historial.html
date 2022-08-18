@@ -1,0 +1,100 @@
+{% extends 'index.html' %}
+{% load static%}
+{% block title %}Formulario Historial Clinico{% endblock title %}
+{% block content %}
+<link rel="stylesheet" href="/static/styles/formulario-historial.css">
+<body>
+        <div class="content-fondo">
+            <div class="formulario">
+                <form method="post">
+                    <h2 class="titulo">Registrar Historia Clinica</h2><br>
+                    {% csrf_token %} 
+
+                    {% if messages %}
+                    <div class="mensaje_exitoso">
+                        {% for m in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ m }}</li>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <div id="formularioHistorial">
+                        <h3>1.Datos de la mascota y veterinario:</h3>
+                        <div class="campo1">
+                            <label>Nombre mascota</label>
+                            {{ form.mascota }}
+                        </div>
+                        
+                        <div class="campo2">
+                            <label>Veterinario</label>
+                            {{ form.veterinario }}
+                        </div>
+                        
+                        <h3>2. Anamnesis:</h3>
+                        <div class="areatext">
+                            {{ form.anamnesis }}
+                        </div>
+                        
+                        <div class="campo3">
+                            <label>Vacunas</label>
+                            {{ form.vacunas }}
+                        </div>
+                        
+                        <h3>3. Examen fisico:</h3>
+                        <div class="areatext">
+                            {{ form.examen_fisico }}
+                        </div>
+
+                        <div class="campo4">
+                            <label>Peso</label>
+                            {{ form.peso }}
+                        </div>
+
+                        <div class="campo4">
+                            <label>Temperatura</label>
+                            {{ form.temperatura }}
+                        </div>
+
+                        <div class="campo4">
+                        <label>Frecuencia cardiaca</label>
+                            {{ form.frecuencia_cardiaca }}
+                        </div>
+
+                        <h3>4. Detalles de la visita:</h3>
+                        <div class="areatext">
+                            {{ form.detalles_visita }}
+                        </div>
+
+                        <h3>5. Diagnostico:</h3>
+                        <div class="areatext">
+                            {{ form.diagnostico }}
+                        </div>
+
+                        <h3>6. Patología:</h3>
+                        <div class="areatext">
+                            {{ form.patologia }}                                    
+                        </div>
+
+                        <h3>7. Tratamiento:</h3>
+                        <div class="areatext">
+                            {{ form.tratamiento }}
+                        </div>
+                    </div>
+
+                    
+                    {% if form.errors %}
+                    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                        <script src="/static/scripts/sweetAlert.js"></script>
+                        <div class="alertE" role="alert">
+                        <h4 id="mensajeE">Error! {% for i in form.errors %} {{i}} {% endfor %}</h4> 
+                      </div>
+                    {% endif %}
+
+                    <button type="submit" class="btn">Guardar</button>
+                </form>
+            </div>
+
+        </div>
+</body>
+<script src="{% static 'scripts/formulariosVenta.js' %}"></script>
+{% endblock content %}

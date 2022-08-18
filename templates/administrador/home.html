@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% load static%}
+{% block title %}Dashboard
+{% endblock title %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'styles/Administrador/botones.css' %}">
+
+
+        
+<a href="{% url 'user_app:registrarUsuariosHome' %}" class="boton"><b>Registrar Usuario</b></a>
+<a href="{% url 'user_app:homeListado' %}" class="boton"><b>Ver Tablas Usuarios</b></a>
+<a href="{% url 'user_app:reporteUsuarios' %}" class="boton"><b>Reporte Usuario</b></a>
+
+
+{% endblock content %}

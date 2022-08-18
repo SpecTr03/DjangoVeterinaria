@@ -1,0 +1,229 @@
+*{
+    font-family: 'Poppins', Courier, monospace;
+    font-style: normal;
+}
+body{
+    
+    line-height: 30px;
+    text-align: center;
+    color: #585858;
+}
+
+/*Quitar flechas de number*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type=number] { -moz-appearance:textfield; }
+
+.titulo 
+{
+    color: #363949;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 70px;
+
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.content-fondo
+{
+    height:500px; /*alto*/
+    width:800px; /*ancho*/
+    display: flex;
+    margin:auto;
+    border-radius: 10px;
+}
+
+.campo{
+    width: 40%;
+    margin: 10px;
+    display: inline-block;
+    
+}
+
+.campo2{
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+}
+
+.campo3{
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.campoEdad{
+    width: 40%;
+    margin: 10px;
+    display: inline-block;
+    margin-right: 6px;
+}
+.campoCastrado{
+    display: inline-block;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.campoCastrado select{
+    width: 130px;
+}
+
+label{
+    padding-right: 10px;
+}
+
+.campo input{
+    border: 1px solid #A2ABC2;
+    background: #FFFFFF;
+    width: 150px;
+    padding-left: 8px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.campoEdad input{
+    border: 1px solid #A2ABC2;
+    background: #FFFFFF;
+    width: 150px;
+    padding-left: 8px;
+    border-radius: 5px;
+    height: 40px;
+    margin-left: 13px;
+}
+
+select{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+
+.nomalinp{
+    border: 1px solid #A2ABC2;
+    background: #FFFFFF;
+    width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 8px;
+}
+
+.campoRadio{
+    display: inline-block;
+    width: 35%;
+    margin: 10px;
+}
+
+.campoRadio input{
+    border: 1px solid #A2ABC2;
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+.formulario
+{
+    height:480px; /*alto*/
+    width:600px; /*ancho*/
+    
+
+    padding-left:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /*border: 1px solid #1f1c1c;*/
+}
+
+
+
+.formulario , button
+{
+    margin-top: 40px;
+}
+
+.btn , text{
+    width:260px;
+    height:40px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #553CFB;
+    color: aliceblue;
+    border: 0px ;
+}
+
+
+/* ------------------------Imagen-------------------*/
+.imagen-content
+{
+    height:300px; /*alto*/
+    width: 300px;
+    margin-top: 90px;
+    margin-left: -50px;
+    margin-right: 0px;
+}
+
+.imagen
+{
+    height:300px; /*alto*/
+    width: 260px; /*ancho*/
+}
+
+.alertE{
+    position: absolute;
+    width: 205px;
+    height: 36px;
+    vertical-align:middle;
+    border-radius: 10px;
+    top: 700px;
+    left: 319px;
+    background: rgba(209, 18, 18, 0.58);
+}
+#mensajeE{
+    position: absolute;
+    top: 8px;
+    left: 11px;
+}
+
+.Ventanae{
+    top: 230px;
+    background: #ffffff;
+    width: 28%;
+    color:rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 33px;
+    min-height: 200px;
+    border-radius: 22px;
+    position: absolute;
+    left: 40%;
+    border:1px solid rgb(0, 0, 0);
+    opacity:8;
+    transition: all 5s;
+    display: block;
+}
+
+#Confirmar{
+    padding: 1.5%;
+    margin-right: 4%;
+    font-size: 15px;
+    border: 2px var(--color-light);
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #553CFB;
+    color: aliceblue;
+}
+
+.mensaje_exitoso{
+    background-color: #D1E7DD;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

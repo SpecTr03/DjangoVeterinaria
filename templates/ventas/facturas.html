@@ -1,0 +1,70 @@
+{% extends 'index.html' %}
+{% load static%}
+{% block title %}Dashboard
+{% endblock title %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'styles/ventas.css' %}">
+<script src="https://kit.fontawesome.com/7fed639e7f.js" crossorigin="anonymous"></script>
+    <section class="header">
+      <h2 class="ventas">Facturas</h2>
+      <nav class="btn">
+      </nav>
+    </section>
+     <table>
+       <thead>
+         <tr class="propiedad">
+           <th>ID</th>
+           <th>Cedula</th>
+           <th>Cliente</th>
+           <th>Fecha</th>
+           <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for p in object_list %}
+          <tr id="valores">
+            <td>{{ p.identificacion_factura|truncatechars:30 }}</td>
+            <td>{{ p.cedula|truncatechars:30 }}</td>
+            <td>{{ p.pedido_por|truncatechars:20 }}</td>
+            <td>{{ p.creado_el|truncatechars:20 }}</td>
+            <td>{{ p.total|truncatechars:20 }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+
+<!-- inicio de bloque de paginacion -->
+<div class="center">
+
+  <div class="pagination">
+    
+    {% if is_paginated %}
+    {% if page_obj.has_previous %}
+    <a href="?page={{ page_obj.previous_page_number }}"><b>&laquo;</b></a>  
+    {% endif %}
+    
+    {% for pagina in paginator.page_range %}
+    {% if pagina == page_obj.number  %}
+    <a class="active" href="?page={{ pagina }}"><b>{{ pagina }}</b></a>
+    {% else %}
+    <a href="?page={{ pagina }}"><b>{{ pagina }}</b></a> 
+    {% endif %}
+    {% endfor %}
+    
+    {% if page_obj.has_next %}
+    <a href="?page={{ page_obj.next_page_number }}"><b>&raquo;</b></a>   
+    {% endif %}
+    
+    {% endif %}
+    
+  </div>
+</div>
+  <!-- FIN bloque de paginacion -->
+
+  <script src="{% static 'scripts/ventas.js' %}"></script>
+
+      
+      
+{% endblock content %}
+      

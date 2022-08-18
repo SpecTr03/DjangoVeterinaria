@@ -1,0 +1,302 @@
+*{
+    font-family: 'Poppins', Courier, monospace;
+    font-style: normal;
+}
+
+/*------------- Titulo Registrar --------------------*/
+.content-titulo
+{
+
+    display: flex;
+    justify-content: left;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 120px;
+    
+}
+
+/*
+.icono{
+    /*border: 1px  black solid;*/
+    /*
+    font-size: 100px;
+    color: #363949;
+    padding-top: 20px;
+}*/
+.titulo
+{
+    color: #363949;
+    
+    padding-left: 50px;
+    padding-top: 60px;
+    /*border: 1px  black solid;*/
+    height: 150px;
+}
+.titulo h1{
+    font-size: 32px;
+}
+/* ---------------centrar las celdas de los campos---------- */
+.center{
+
+    /*background-color: rgb(154, 243, 37);*/
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+
+    width: 1400px;
+    height:700px;
+
+    margin-left:0px;
+}
+
+
+.campos{
+
+    /*border: 1px black solid;*/
+    
+    margin-left: 0px;
+    /*background-color: red;*/
+
+    display: inline-flex;
+    justify-content: center;
+}
+
+.c1{
+    margin-top: 0px;
+    padding-top:5px;
+    
+    width:650px;
+    height: 200px;
+    
+    /*border: 1px black solid;*/
+    /* background-color: yellow;*/
+}
+/* ---------------celda con el boton registrar---------- */
+.c2{
+
+    /* margin-top: 8em;
+    /* width: 100%; */
+    /* margin-left: -30%; */
+    
+    /*border: 1px black solid;*/
+    /* background-color: yellow; */
+    
+}
+.c2 button
+{
+    margin-top: 150px;
+    margin-left:235px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #553CFB;
+    color: aliceblue;
+    border: 0px ;
+
+}
+
+/* ---------------contenedor con los Textos e Inputs/Entradas/Campos---------- */
+.espacio
+{
+    height: 50px; /*ancho*/
+    width: 500px ;
+
+
+    /*border: 1px black solid;*/
+    border-radius: 10px;
+    padding-top: 10px;
+    word-wrap: normal;
+   /* padding-left: 40px;*/
+    padding-bottom: 10px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: left;
+}
+
+label{
+    color: #757575;
+    text-align: left;
+    font-size: 18px;
+    
+    
+    padding-top: 10px;
+
+    margin-top: 0px;
+    margin-right: 20px;
+    /*margin-bottom: 40px; */
+    height: 40px;
+    width: 200px;
+
+    /*ver limites*/
+    /*border: 1px black solid;*/
+
+
+}
+input
+{
+    /*padding-left: s0px;*/
+    width: 320px;
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 16px;
+    font-size: 18px;
+    border: 1px solid #A2ABC2;
+}
+
+select{
+    padding-left: 88px;
+    display: block;
+    font-size: 16px;
+    height:42px;
+    width: 316px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: -1px auto;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgb(0 0 0 / 3%);
+    border-radius: 8px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E), linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    /*
+    width: 320px;
+    height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 1px solid #A2ABC2;
+    font-family: 'Poppins', sans-serif;
+    */
+
+}
+
+
+.mensaje_exitoso{
+    background-color: #D1E7DD;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    max-width: 30%;
+    padding: 20px;
+}
+
+
+/* ---------------Boton Registrar---------- */
+.boton
+{
+    position: relative;
+    left: -89%;
+    top: 51%;
+    height: 50px;
+    width: 300px;
+    border: 3px solid rgb(0, 34, 109);
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Poppins', Courier, monospace;
+    
+}
+
+.boton:hover
+{
+    color: white;
+	background: rgb(69, 32, 235);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.alertA{
+    position: relative;
+    width: 375px;
+    height: 36px;
+    vertical-align: middle;
+    border-radius: 10px;
+    top: -54px;
+    left: 659px;
+    background: #f5c2c7;
+}
+
+.alertE{
+    position: relative;
+    width: 375px;
+    height: 36px;
+    vertical-align: middle;
+    border-radius: 10px;
+    top: -50px;
+    left: 659px;
+    background: #f5c2c7;
+}
+#alet{
+    position: relative;
+    top: -1px;
+    left: 325px;
+    width: 40px;
+    height: 40px;
+}
+#mensajeE{
+    position: relative;
+    top: -31px;
+    left: 11px;
+}
+#mensajeA{
+    position: relative;
+    top: -26px;
+    left: 11px;
+}
+
+
+.Ventanae{
+    top: 230px;
+    background: #ffffff;
+    width: 365px;
+    color:rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 33px;
+    min-height: 200px;
+    border-radius: 22px;
+    position: absolute;
+    left: 40%;
+    border:1px solid rgb(0, 0, 0);
+    opacity:8;
+    transition: all 5s;
+    display: block;
+}
+
+#Confirmar{
+    padding: 1.5%;
+    margin-right: 4%;
+    font-size: 15px;
+    border: 2px var(--color-light);
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #553CFB;
+    color: aliceblue;
+}
+.alert1{
+    position: relative;
+    width: 375px;
+    height: 36px;
+    vertical-align: middle;
+    border-radius: 10px;
+    top: -169px;
+    left: 659px;
+    background: #f5c2c7;
+}
+
+.alert3{
+    position: relative;
+    width: 375px;
+    height: 36px;
+    vertical-align: middle;
+    border-radius: 10px;
+    top: -169px;
+    left: 659px;
+    background: #f5c2c7;
+}
